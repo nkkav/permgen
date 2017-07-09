@@ -24,9 +24,6 @@
 #ifndef DIM
 #define DIM         10
 #endif
-#ifndef FACT_DIM
-#define FACT_DIM   1*2*3*4*5*6*7*8*9*10
-#endif
 
 #define SWAP(x, y)   do { x ^= y; y ^= x; x ^= y; } while (0)
 
@@ -49,20 +46,6 @@ void print_perm(FILE *f, int *perm, int n, int start_pos)
     fprintf(f, "%d ", perm[i]);
   }
   fprintf(f, "\n");
-}
-
-/* fact: Single-precision integer factorial calculation.
- */
-int fact(int n)
-{
-  int res, x, i;
-  x = n;
-  res = 1;
-  for (i = 1; i <= x; i++)
-  {
-    res = res * i;
-  }
-  return res;
 }
 
 /* TAOCP_V4F2B_L:
