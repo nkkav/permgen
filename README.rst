@@ -83,9 +83,9 @@ allocations and disable any array interfaces.
 ================
 
 - [mandatory for building] Standard UNIX-based tools
-  * host compiler (e.g., ``gcc``)
-  * ``make``
-  * ``bash``
+    * host compiler (e.g., ``gcc``)
+    * ``make``
+    * ``bash``
 
 
 5. permgen usage
@@ -105,7 +105,7 @@ The complete ``permgen`` options listing:
   This is the default generator.
 
 **-p**
-  Use algorithm P (plain changes method)
+  Use algorithm P (plain changes method).
 
 **-c**
   Use algorithm C (permutation generation by cyclic shifts).

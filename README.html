@@ -444,11 +444,17 @@ allocations and disable any array interfaces.</p>
 </div>
 <div class="section" id="prerequisites">
 <h1>4. Prerequisites</h1>
-<ul class="simple">
-<li>[mandatory for building] Standard UNIX-based tools
-* host compiler (e.g., <tt class="docutils literal">gcc</tt>)
-* <tt class="docutils literal">make</tt>
-* <tt class="docutils literal">bash</tt></li>
+<ul>
+<li><dl class="first docutils">
+<dt>[mandatory for building] Standard UNIX-based tools</dt>
+<dd><ul class="first last simple">
+<li>host compiler (e.g., <tt class="docutils literal">gcc</tt>)</li>
+<li><tt class="docutils literal">make</tt></li>
+<li><tt class="docutils literal">bash</tt></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 <div class="section" id="permgen-usage">
@@ -465,7 +471,7 @@ allocations and disable any array interfaces.</p>
 <dd>Use algorithm L (lexicographic permutation generation).
 This is the default generator.</dd>
 <dt><strong>-p</strong></dt>
-<dd>Use algorithm P (plain changes method)</dd>
+<dd>Use algorithm P (plain changes method).</dd>
 <dt><strong>-c</strong></dt>
 <dd>Use algorithm C (permutation generation by cyclic shifts).</dd>
 <dt><strong>-e</strong></dt>
