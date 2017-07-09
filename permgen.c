@@ -94,7 +94,9 @@ void TAOCP_V4F2B_L(int *setarr, int elems)
 
   /* L0: Copy setarr to the perm working array. */
   size = elems;
+#ifndef NOPRINT
   printf("n = %d\n", size-1);
+#endif
 #ifndef NOMALLOC
   a = malloc(size * sizeof(int));
 #endif
@@ -536,7 +538,9 @@ int main(int argc, char **argv)
 #endif
       for (j = 0; j <= nvals; j++) {
         values[j] = j;
+#ifndef NOPRINT
         printf("values[%d] = %d\n", values[j], j);
+#endif
       }
     } else if (strcmp("-i", argv[i]) == 0) {
       if ((i+1) < argc) {
@@ -622,7 +626,9 @@ int main(int argc, char **argv)
 #endif
   }
 
+#ifndef NOPRINT
   printf("Number of permutations: %d\n", perm_cnt);
+#endif
 
   if (copied_file_i_name == 1) {
     fclose(file_i);
