@@ -115,7 +115,7 @@ void TAOCP_V4F2B_L(int *setarr, int elems)
 #ifndef NOMALLOC
   a = malloc(size * sizeof(int));
 #endif
-  for (i = 0; i <= size; i++) {
+  for (i = 0; i < size; i++) {
 #ifdef NOARRIF
     a[i] = values[i];
 #else
@@ -224,7 +224,7 @@ void TAOCP_V4F2B_P(int *setarr, int elems)
 #ifndef NOMALLOC
   a = malloc(size * sizeof(int));
 #endif
-  for (i = 0; i <= size; i++) {
+  for (i = 0; i < size; i++) {
 #ifdef NOARRIF
     a[i] = values[i];
 #else
@@ -331,7 +331,7 @@ void TAOCP_V4F2B_C(int *setarr, int elems)
 #ifndef NOMALLOC
   x = malloc(size * sizeof(int));
 #endif
-  for (i = 0; i <= size; i++) {
+  for (i = 0; i < size; i++) {
 #ifdef NOARRIF
     x[i] = values[i];
 #else
@@ -343,7 +343,7 @@ void TAOCP_V4F2B_C(int *setarr, int elems)
 #ifndef NOMALLOC
   a = malloc(size * sizeof(int));
 #endif
-  for (j = 0; j <= size; j++) {
+  for (j = 0; j < size; j++) {
     a[j] = x[j];
   }
 
