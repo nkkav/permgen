@@ -1,4 +1,4 @@
-CC = gcc
+CC ?= gcc
 CFLAGS = -std=c99 -pedantic -Wall -O3
 #CFLAGS = -g -O0
 
